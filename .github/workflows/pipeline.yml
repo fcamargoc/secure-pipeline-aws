@@ -39,6 +39,6 @@ jobs:
 
     - name: Tag and Push to ECR
       run: |
-        IMAGE_URI=992382675167.dkr.ecr.us-east-1.amazonaws.com/my-app/my-app:latest
+        IMAGE_URI=992382675167.dkr.ecr.us-east-1.amazonaws.com/my-app:latest
         docker tag my-app:latest $IMAGE_URI
         docker push $IMAGE_URI
